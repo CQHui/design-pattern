@@ -1,4 +1,4 @@
-package com.qihui.designpattern.Facade;
+package com.qihui.designpattern.facade;
 
 /**
  * @author chenqihui
