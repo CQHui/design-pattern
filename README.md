@@ -20,3 +20,7 @@
 - 外观模式(facade)
 - 原型模式(prototype)
 - 策略模式(strategy)
+
+### 设计模式lambda实现
+
+java8的lambda引入极大方便了一些设计模式的简化，其中工厂，模版，策略模式提供了lambda的实现demo
