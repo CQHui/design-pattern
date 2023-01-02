@@ -4,27 +4,27 @@ package com.qihui.designpattern.template;
  * @author chenqihui
  * @date 2019/4/9
  */
-public abstract class PayOrderTemplate {
+public interface PayOrderTemplate {
 
-    protected  void buyProduct() {
+    default void buyProduct() {
         System.out.println("购买商品");
     }
 
-    protected void address() {
+    default void address() {
         System.out.println("填写地址");
     }
 
-    protected void order() {
+    default void order() {
         System.out.println("下单");
     }
 
-    protected abstract void pay();
+    void pay();
 
-    protected void deliver() {
+    default void deliver() {
         System.out.println("发货");
     }
 
-    public void process() {
+    default void process() {
         buyProduct();
         address();
         order();

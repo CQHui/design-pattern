@@ -4,31 +4,31 @@ package com.qihui.designpattern.strategy;
  * @author chenqihui
  * @date 2019/4/10
  */
-public abstract class Strategy {
-    abstract void algorithmInterface();
+public interface Strategy {
+    void algorithmInterface();
 }
 
-class StrategyA extends Strategy {
+class StrategyA implements Strategy {
     @Override
-    void algorithmInterface() {
+    public void algorithmInterface() {
         System.out.println("算法A");
     }
 
 }
 
-class StrategyB extends Strategy {
+class StrategyB implements Strategy {
 
     @Override
-    void algorithmInterface() {
+    public void algorithmInterface() {
         System.out.println("算法B");
     }
 
 }
 
-class StrategyC extends Strategy {
+class StrategyC implements Strategy {
 
     @Override
-    void algorithmInterface() {
+    public void algorithmInterface() {
         System.out.println("算法C");
     }
 
